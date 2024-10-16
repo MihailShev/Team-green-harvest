@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/Ctrl Alt Elite/",
+    "build": "vite build --base=/Ctrl-Alt-Elite/",
     "preview": "vite preview"
   },
   "devDependencies": {
