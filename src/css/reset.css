@@ -1,3 +1,9 @@
+@media screen and (min-width: 320px) {
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -6,10 +12,7 @@ h5,
 h6,
 p {
   margin: 0;
-}
-
-p:last-child {
-  margin-bottom: 0;
+  cursor: default;
 }
 
 ul {
@@ -24,10 +27,10 @@ a {
 }
 
 button {
-    padding: 0;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 img {
