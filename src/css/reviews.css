@@ -1,0 +1,116 @@
+.container-reviews {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.reviews-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.04;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.reviews-title-part {
+  color: #576f35;
+}
+.reviews-discription {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  margin-bottom: 40px;
+}
+.reviews-list {
+  display: flex;
+  /* gap: 25px; */
+}
+.reviews-item {
+  border: 1px solid rgba(122, 49, 69, 0.3);
+  border-radius: 24px;
+  padding: 20px 16px;
+  /* width: calc((100% - 50px) / 2); */
+  width: 335px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.card-2,
+.card-3 {
+  display: none;
+}
+.reviews-img {
+  margin: auto;
+  margin-bottom: 24px;
+}
+.reviews-item-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #040306;
+  margin-bottom: 8px;
+  text-align: center;
+  /* align-items: center;
+  justify-content: center; */
+}
+.reviews-item-discription {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: rgba(4, 3, 6, 0.4);
+  /* justify-content: center;
+  margin-bottom: auto; */
+}
+@media screen and (min-width: 768px) {
+  .container-reviews {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .reviews-title {
+    font-size: 64px;
+    line-height: 1;
+    margin-bottom: 25px;
+    max-width: 553px;
+  }
+  .reviews-discription {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 50px;
+    max-width: 553px;
+  }
+  .reviews-item-title {
+    font-size: 18px;
+    line-height: 1.1;
+    text-align: center;
+    color: #141414;
+    margin-bottom: 8px;
+  }
+  .reviews-item-discription {
+    font-size: 16px;
+    line-height: 1.4;
+    color: rgba(20, 20, 20, 0.4);
+  }
+  .card-2 {
+    display: inline-block;
+    width: 343px;
+    height: 258px;
+    justify-content: center;
+    align-items: center;
+  }
+  .reviews-list {
+    gap: 25px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .card-3 {
+    display: inline-block;
+    max-width: 343px;
+    height: 258px;
+    justify-content: center;
+    align-items: center;
+  }
+}
