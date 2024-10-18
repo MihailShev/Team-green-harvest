@@ -1,0 +1,117 @@
+.vegetables {
+  padding: 80px 0;
+  background-color: #7a3145;
+}
+.vegetables-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.04;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  margin-bottom: 20px;
+}
+.vegetables-title-style {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.04;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: rgba(251, 251, 251, 0.3);
+}
+.vegetables-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #fbfbfb;
+  margin-bottom: 40px;
+}
+.vegetables-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.vegetables-item {
+  background-color: #fbfbfb;
+  border-radius: 40px;
+  padding: 32px 26px;
+  max-width: 334px;
+  height: 379px;
+}
+.item-title-vegetables {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: #7a3145;
+  margin-bottom: 12px;
+}
+.item-text-vegetables {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #141414;
+}
+
+@media screen and (min-width: 768px) {
+  .vegetables {
+    padding: 100px 0;
+  }
+  .vegetables-title {
+    font-size: 64px;
+    line-height: 1;
+    color: #fbfbfb;
+    margin-bottom: 50px;
+    max-width: 508px;
+  }
+
+  .vegetables-title-style {
+    font-size: 64px;
+    line-height: 1;
+    color: rgba(251, 251, 251, 0.3);
+  }
+  .vegetables-text {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 50px;
+    width: 626px;
+  }
+  .vegetables-list {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 28px;
+    column-gap: 20px;
+  }
+
+  .vegetables-item {
+    width: calc((100% - 20px) / 2);
+    padding: 32px 26px;
+  }
+  .item-title-vegetables {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .vegetables-title {
+    margin-bottom: 25px;
+  }
+
+  .vegetables-list {
+    row-gap: 28px;
+    column-gap: 21px;
+  }
+
+  .vegetables-item {
+    width: calc((100% - 21px) / 3);
+    padding: 32px 32px;
+  }
+  .item-title-vegetables {
+    font-size: 32px;
+  }
+}
