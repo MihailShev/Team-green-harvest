@@ -4,6 +4,10 @@ body {
   color: #141414;
 }
 
+svg {
+  display: block;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
