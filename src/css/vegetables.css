@@ -1,5 +1,5 @@
 .vegetables {
-  padding: 80px 0;
+  padding: 80px 0 80px 0;
   background-color: #7a3145;
 }
 .vegetables-title {
@@ -28,10 +28,8 @@
 }
 .vegetables-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  gap: 20px;
+  row-gap: 20px;
 }
 .vegetables-item {
   background-color: #fbfbfb;
@@ -39,6 +37,8 @@
   padding: 32px 26px;
   max-width: 334px;
   height: 379px;
+  position: relative;
+  overflow: hidden;
 }
 .item-title-vegetables {
   font-weight: 600;
@@ -55,6 +55,27 @@
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #141414;
+}
+.vegetables-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: #fbfbfb;
+  padding: 40px 32px;
+  background-color: #576f35;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.vegetables-item:hover .vegetables-overlay {
+  transform: translateY(0);
 }
 
 @media screen and (min-width: 768px) {
@@ -82,7 +103,6 @@
   }
   .vegetables-list {
     flex-direction: row;
-    justify-content: center;
     flex-wrap: wrap;
     row-gap: 28px;
     column-gap: 20px;
@@ -102,13 +122,8 @@
     margin-bottom: 25px;
   }
 
-  .vegetables-list {
-    row-gap: 28px;
-    column-gap: 21px;
-  }
-
   .vegetables-item {
-    width: calc((100% - 21px) / 3);
+    width: calc((100% - 20px) / 3);
     padding: 32px 32px;
   }
   .item-title-vegetables {
